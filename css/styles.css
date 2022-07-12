@@ -1,0 +1,347 @@
+:root {
+  --main-text-color: #757575;
+  --heading-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-background-color: #f5f4fa;
+  --accent-bcg-color: #2f303a;
+  --primary-white: #ffffff;
+  --main-font: Roboto, sans-serif;
+  --logo-font: Raleway, cursive;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary-white);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+}
+header{
+  border-bottom: 1px solid #ececec;
+}
+body a {
+  text-decoration: none;
+}
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.list {
+  list-style: none;
+}
+.logo {
+  margin-right: 93px;
+  color: var(--heading-color);
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-style {
+  color: var(--accent-color);
+}
+.header-style {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--heading-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .current {
+  color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
+.contact-style {
+  color: var(--main-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-style:hover,
+.contact-style:focus {
+  color: var(--accent-color);
+}
+.hero {
+  background-color: var(--accent-bcg-color);
+  color: var(--primary-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* margin-bottom: 95px; не помню откуда взялся и нахуя*/
+}
+.hero-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 200px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-style {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.section-title {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.hidden {
+  display: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section:nth-child(2) {
+  padding-bottom: 47px;
+}
+.section:nth-child(3) {
+  padding-top: 47px;
+}
+.feature-list {
+  display: flex;
+}
+.feature-list .item {
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+}
+.feature-list .item:last-child {
+  margin-right: 0;
+}
+.feature-list .title {
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.activity-list {
+  display: flex;
+}
+.activity-list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+.activity-list .item:last-child {
+  margin-right: 0;
+}
+.team-list {
+  display: flex;
+}
+.team-list .photo {
+  display: block;
+  width: 100%;
+}
+.team-list .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  border: 1px solid;
+  border-color: #ececec;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list .item:last-child {
+  margin-right: 0;
+}
+.teammate-content{
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+.section .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.projects .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.thumb{
+  padding: 20px 24px;
+  border: 1px solid;
+  border-top: 0px;
+  border-color: #eeeeee;  
+}
+.project-cover{
+  display: block;
+  width: 100%;
+}
+.section .card-title {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section .card-description {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+.team-section .teammate-name {
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-section .teammate-post {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.filter-list .item {
+  margin-right: 8px;
+}
+.filter-list .item:last-child {
+  margin-right: 0;
+}
+.footer-style {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--accent-bcg-color);
+}
+.footer-style .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: var(--primary-white);
+}
+.footer-style .address-style {
+  color: var(--primary-white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list .item {
+  margin-bottom: 9px;
+}
+.footer-list .item:last-child {
+  margin-bottom: 0;
+}
+.button {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-background-color);
+  padding: 6px 22px;
+  text-align: center;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+/* цвет заголовков #212121 */
+/* цвет основного текста #757575 */
+/* синий #2196F3 */
+/* белый #FFFFFF */
+/* подвал и хиро #2F303A */
+/* вторичный фон #F5F4FA */
